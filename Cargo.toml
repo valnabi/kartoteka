@@ -1,0 +1,13 @@
+[workspace]
+members = [
+  "crates/common",
+  "crates/core",
+  "crates/db",
+  "apps/cli",
+]
+resolver = "2"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
